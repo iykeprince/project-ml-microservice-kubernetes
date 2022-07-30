@@ -12,4 +12,4 @@ docker images ls
 
 # Step 3: 
 # Run flask app
-docker run -d -p 5000:5000 project-ml-microservice-kubernetes
+docker run -d -p 8000:80 project-ml-microservice-kubernetes
