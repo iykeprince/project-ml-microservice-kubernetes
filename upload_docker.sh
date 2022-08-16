@@ -5,14 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=iykeprince/project-ml-microservice-kubernetes:latest
+dockerpath=iykeprince/projectmlmicroservicekubernetes
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login
-docker tag project-ml-microservice-kubernetes $dockerpath
+docker --tag projectmlmicroservicekubernetes $dockerpath:latest
 
 # Step 3:
 # Push image to a docker repository
-docker push $dockerpath
+docker push $dockerpath:latest
