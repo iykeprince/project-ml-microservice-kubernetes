@@ -12,7 +12,7 @@ kubectl get nodes
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run projectmlmicroservicekubernetes003 \
+kubectl run projectmlmicroservicekubernetes004 \
     --image=$dockerpath \
     --port=80
 
@@ -22,5 +22,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward pod/projectmlmicroservicekubernetes003 --address 0.0.0.0 8000:80
+kubectl port-forward pod/projectmlmicroservicekubernetes004 --address 0.0.0.0 8000:80
 
